@@ -11,6 +11,16 @@ const typewriter = () => {
         x += 150;
     }
   }
+};
+
+
+// WIP Trying to use type writer and get to next line without an if statement for last character - work in progress
+const typewriter1 = () => {
+  let x = 0;
+  for (let char = 0; char < sentence.length; char ++) {
+      setTimeout(() => {process.stdout.write(sentence[char])}, x);
+        x += 150;
+  }
 }
 
 typewriter();
